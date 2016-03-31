@@ -1,0 +1,22 @@
+{
+    "name": "fc/custom_handles",
+    "description": "Space for adding custom layout handles for frontend originally to add customer_logged_in and customer_logged_out handles",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "require": {
+        "php": "~5.5.0|~5.6.0",
+        "magento/magento-composer-installer": "*"
+    },
+    "extra": {
+        "map": [
+            [
+                "*",
+                "Fc/CustomHandles"
+            ]
+        ]
+    }
+}

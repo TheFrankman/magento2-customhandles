@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="layout_load_before">
+        <observer name="add_layout_handles" instance="Fc\CustomHandles\Observer\AddHandles" />
+    </event>
+
+    <event name="layout_generate_blocks_after">
+        <observer name="checkout_layout_handles" instance="Fc\CustomHandles\Observer\CheckHandles" />
+    </event>
+</config>
+
+
