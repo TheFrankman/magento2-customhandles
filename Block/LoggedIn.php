@@ -1,25 +1,33 @@
 <?php
+
 namespace Fc\CustomHandles\Block;
 
-class LoggedIn extends \Magento\Framework\View\Element\Template
-{
-    protected $_storeManager;
-    protected $_coreHelper;
+use Magento\Framework\View\Element\Template;
+use Magento\Framework\View\Element\Template\Context;
 
+/**
+ * Class LoggedIn
+ * @package Fc\CustomHandles\Block
+ * @author Frank Clark <mrfrankclark1@gmail.com>
+ * @description Currently unused block class
+ */
+class LoggedIn extends Template
+{
     /**
-     * Construct
-     *
-     * @param \Magento\Framework\View\Element\Template\Context $context
+     * LoggedIn constructor.
+     * @param Context $context
      * @param array $data
      */
     public function __construct(
-        \Magento\Framework\View\Element\Template\Context $context,
-        \Magento\Store\Model\StoreManagerInterface $storeManager,
+        Template\Context $context,
         array $data = []
     ) {
         parent::__construct($context, $data);
     }
 
+    /**
+     * @return string
+     */
     public function getLoggedInContent()
     {
         return '';
