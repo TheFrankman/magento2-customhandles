@@ -2,6 +2,8 @@
 
 M1 used to have layout handles so you could customise your templates etc through xml. This module re-adds customer_logged_in and customer_logged_out layout handles to M2
 
+**Fully PSR2 Compliant**
+
 ## Usage
 
 Use `fc/custom_handles/view/frontend/layout/customer_logged_in.xml` In order to add different XML based on the logged in / logged out status of your customer.
