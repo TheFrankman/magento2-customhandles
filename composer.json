@@ -7,20 +7,18 @@
         "OSL-3.0",
         "AFL-3.0"
     ],
-    "psr-4": {
-        "Fc\\CustomHandles\\": ""
-    },
-    "extra": {
-        "map": [
-            [
-                "*",
-                "Fc/CustomHandles"
-            ]
-        ]
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Fc\\CustomHandles\\": ""
+        }
     },
     "authors": [
         {
-            "name": "Frank Clark"
+            "name": "Frank Clark",
+            "role": "Senior Develiper"
         }
     ]
 }
