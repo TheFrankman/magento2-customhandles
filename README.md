@@ -1,6 +1,6 @@
 # Fc_CustomHandles
 
-Add customer_logged_in and customer_logged_out layout handles
+M1 used to have layout handles so you could customise your templates etc through xml. This module re-adds customer_logged_in and customer_logged_out layout handles to M2
 
 ## Usage
 
@@ -29,3 +29,43 @@ I will regularly tag any changes made to the module although I doubt there will 
 ...
 }
 ```
+## Additional Information
+
+This would normally be achieved in M1 using the following markup in local.xml 
+
+```
+<customer_logged_in>
+    <block type="core/template"
+           name="customer.logged.in.template"
+           template="page/html/customer-logged-in.phtml" />
+</customer_logged_in>
+
+<customer_logged_in>
+    <block type="core/template"
+           name="customer.logged.out.template"
+           template="page/html/customer-logged-out.phtml" />
+</customer_logged_in>
+```
+
+## License
+MIT License
+
+Copyright (c) 2017 Frank Clark
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
